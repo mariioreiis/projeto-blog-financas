@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugar do Investidor - Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Blog sobre investimentos, renda fixa, ações e finanças pessoais.">
+  <meta name="keywords" content="investimentos, renda fixa, ações, finanças, blog">
+  <meta name="author" content="Lugar do Investidor">
+  <link rel="canonical" href="https://lugardoinvestidor.netlify.com/">
+  
+  <!-- Google Fonts Preload -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="index.html">Lugar do Investidor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="categoria.html?cat=renda-fixa" class="nav-link text-white">Renda Fixa</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=acoes" class="nav-link text-white">Ações</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=fiis" class="nav-link text-white">Fundos Imobiliários</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=criptomoedas" class="nav-link text-white">Criptomoedas</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=exterior-stocks" class="nav-link text-white">Investimentos no Exterior</a></li>
+        </ul>
+        <form id="search-form" class="d-flex" role="search">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+      <button id="modo-toggle" class="btn btn-outline-dark btn-sm"><i class="bi bi-moon"></i></button>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="ads-banner">[ Banner superior - Google Adsense 728x90 ]</div>
+
+    <div class="ads-banner">[ Banner entre posts - Google Adsense ]</div>
+  </main>
+
+  <footer class="text-center">
+    <div class="container">
+      <div class="footer-links mb-3">
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos-condicoes.html">Termos de Uso</a>
+        <a href="transparencia.html">Transparência</a>
+        <a href="sobre-mim.html">Sobre Mim</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="#">Contato</a>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="bg-light p-4 rounded">
+        <h5 style="color: black;">Receba novidades no seu email</h5>
+        <form>
+          <div class="row g-2">
+            <div class="col-md-9">
+              <input type="email" class="form-control" placeholder="Seu email" required>
+            </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-primary w-100">Assinar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <p>&copy; 2025 Lugar do Investidor. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/load-posts.js"></script>  
+  <script src="js/destaques.js"></script>
+  <script>
+    // Alternância de modo escuro
+    const toggleBtn = document.getElementById('modo-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('bg-dark');
+      document.body.classList.toggle('text-light');
+      document.querySelectorAll('.card').forEach(card => {
+        card.classList.toggle('bg-dark');
+        card.classList.toggle('text-light');
+      });
+    });
+  </script>
+</body>
+</html>

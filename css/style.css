@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+
+  body img {
+    align-items: center;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 600;
+  }
+  
+  header, footer {
+    background-color: #212529;
+    color: white;
+    padding: 1.5rem 0;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Post principal (destaque) */
+    #post-destaque {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+
+    #post-destaque img {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+/* Cards de destaque (os 4 abaixo do principal) */
+    #destaques-container .card {
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    #destaques-container .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    #destaques-container img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      object-fit: cover;
+    }
+
+/* Lista completa dos posts (abaixo dos destaques) */
+    #todos-posts .card {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    #todos-posts .card + .card {
+      margin-top: 1.5rem;
+    }
+
+    #todos-posts img {
+      max-width: 250px;
+      object-fit: cover;
+      border-radius: 8px 0 0 8px;
+    }
+
+
+  .ads-banner {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #6c757d;
+  }
+  .pagination {
+    justify-content: center;
+  }
+
+  footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  footer .footer-links a {
+    color: #adb5bd;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  footer .footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+/* Botões */
+  .btn-outline-primary {
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  .back-button {
+    margin: 10px;
+    padding: auto;
+  }
