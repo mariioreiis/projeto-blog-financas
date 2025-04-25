@@ -2,6 +2,7 @@
 title: "Como montar uma carteira diversificada em 2025"
 date: "2025-04-20"
 image: "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/como-investir-com-pouco-dinheiro.jpg"
+categoria: Noticias
 ---
 
 Montar uma carteira de investimentos diversificada é uma estratégia fundamental para qualquer investidor que busca equilibrar riscos e maximizar retornos. 025, com as constantes mudanças no cenário econômico global, a diversificação se torna ainda mais crucial. Esuia completo fornecerá uma análise detalhada sobre como estruturar uma carteira diversificada, considerando as tendências atuais do mercado financeiro.

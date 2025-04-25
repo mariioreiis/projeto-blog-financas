@@ -2,6 +2,7 @@
 title: "Investimentos Sustentáveis: Como Alinhar Lucro e Consciência em 2025"
 date: "2025-04-22"
 image: ""
+categoria: Noticias
 ---
 
 Os **investimentos sustentáveis** estão em alta em 2025. Cada vez mais pessoas buscam formas de ganhar dinheiro sem prejudicar o meio ambiente, respeitando as pessoas e apoiando empresas que trabalham com responsabilidade. Isso é possível com investimentos que seguem princípios ambientais, sociais e de boa governança.

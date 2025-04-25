@@ -2,6 +2,7 @@
 title: "Renda Fixa em Alta: Como Aproveitar os Juros Elevados em 2025"
 date: "2025-04-22"
 image: ""
+categoria: "Renda-Fixa"
 ---
 
 ## Renda Fixa em Alta

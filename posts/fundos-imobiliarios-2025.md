@@ -2,6 +2,7 @@
 title: "Fundos Imobiliários em 2025: O Que Está Acontecendo com o Mercado?"
 date: "2025-04-22"
 image: "https://www.moneytimes.com.br/uploads/2024/08/mt-fiis-fundos-imobiliarios-dividendos-selic-e1723665556622.jpg"
+categoria: Fundos Imobiliarios
 ---
 
 Fundos imobiliários em 2025 estão chamando a atenção de muitos investidores. Mas não é por bons motivos, pelo menos não para quem esperava apenas lucros. Neste ano, muitos FIIs (como são conhecidos) estão passando por um período de queda nos preços e nos rendimentos. Mas será que isso significa que os fundos imobiliários deixaram de ser bons investimentos?

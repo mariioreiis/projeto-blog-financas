@@ -2,6 +2,7 @@
 title: "Tecnologia e Saúde: Setores Promissores para Investir em 2025"
 date: "2025-04-22"
 image: ""
+categoria: Noticias
 ---
 
 ## Setores Promissores para Investir
