@@ -1,7 +1,7 @@
 ---
 title: "Renda Fixa x Bolsa de Valores: Onde Investir com Juros Altos?"
 date: "2025-04-27"
-image: "https://s2-oglobo.glbimg.com/2uWqX16VY02iyyeeUL2jCzs4gtA=/0x0:1600x904/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/h/Y/iWj6PLTYyu6ehNzsYcsQ/13b74a3a-64e4-43c5-910f-df796ed11854.jpg"
+image: "https://www.empiricus.com.br/uploads/2024/06/renda-fixa-ou-renda-variavel-acoes-bolsa.jpg"
 categoria: Noticias, Acoes, Renda Fixa
 ---
 

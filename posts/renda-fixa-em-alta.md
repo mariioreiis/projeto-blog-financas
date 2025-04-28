@@ -1,7 +1,7 @@
 ---
 title: "Renda Fixa em Alta: Como Aproveitar os Juros Elevados em 2025"
 date: "2025-04-22"
-image: ""
+image: "https://seucreditodigital.com.br/wp-content/uploads/2025/02/seucreditodigital.com.br-titulo-de-renda-fixa-rende-o-triplo-da-selic-e-lidera-em-janeiro-saiba-qual-renda-fixa-1250x720.jpg"
 categoria: "Renda-Fixa"
 ---
 

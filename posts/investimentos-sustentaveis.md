@@ -1,7 +1,7 @@
 ---
 title: "Investimentos Sustentáveis: Como Alinhar Lucro e Consciência em 2025"
 date: "2025-04-22"
-image: ""
+image: "https://s2-valor-investe.glbimg.com/G0RZadkCgboWB8KeGCoY1H01Fvk=/676x129:2221x1145/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/S/8/Bzmb6NRZOoy7mXLeS0og/gettyimages-1151803694.jpg"
 categoria: Noticias
 ---
 

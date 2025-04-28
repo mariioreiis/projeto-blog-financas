@@ -1,7 +1,7 @@
 ---
 title: "Fundos Imobiliários em Recuperação: Vale a Pena Investir Agora?"
 date: "2025-04-27"
-image: ""
+image: "https://media.seudinheiro.com/uploads/2022/05/Fundos-Imobiliarios-FIIs-2.jpg"
 categoria: Fundos Imobiliarios
 ---
 

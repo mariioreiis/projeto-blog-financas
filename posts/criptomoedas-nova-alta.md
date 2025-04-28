@@ -1,7 +1,7 @@
 ---
 title: "Criptomoedas em Nova Alta: Estratégias para Investir com Segurança"
 date: "2025-04-27"
-image: ""
+image: "https://www.criptofacil.com/wp-content/uploads/2022/07/bitcoin-por-us-19-mil-criptomoedas-entram-em-nova-alta-e-sobem-ate-17.jpg"
 categoria: Criptomoedas
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Tendências de Investimentos Verdes: Oportunidades para 2025"
 date: "2025-04-27"
-image: "https://s2-oglobo.glbimg.com/2uWqX16VY02iyyeeUL2jCzs4gtA=/0x0:1600x904/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/h/Y/iWj6PLTYyu6ehNzsYcsQ/13b74a3a-64e4-43c5-910f-df796ed11854.jpg"
+image: "https://s2-umsoplaneta.glbimg.com/zYb6uDpfqMtsXte4UzGncJE2lQ0=/0x112:2121x1414/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2023/B/2/AEIYTDSUSKnaY0IL3PQQ/gettyimages-1400960132-1-.jpg"
 categoria: Criptomoedas
 ---
 
