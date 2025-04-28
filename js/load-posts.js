@@ -2,7 +2,7 @@ async function carregarPosts() {
   const container = document.getElementById('posts-container');
   if (!container) return;
 
-  const arquivos = ['como-comecar-a-investir.md','como-montar-carteira-2025.md', 'fundos-imobiliarios-2025.md', 'investimentos-sustentaveis.md', 'renda-fixa-em-alta.md', 'setores-promissores-2025.md'];
+  const arquivos = ['como-montar-carteira-2025.md', 'fundos-imobiliarios-2025.md', 'investimentos-sustentaveis.md', 'renda-fixa-em-alta.md', 'setores-promissores-2025.md', 'alta-do-dolar-em-2025.md'];
 
   for (let arquivo of arquivos) {
     try {
