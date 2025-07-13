@@ -19,11 +19,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="categoria.html?cat=Noticias" class="nav-link text-white"></a></li>
-          <li class="nav-item"><a href="categoria.html?cat=Renda-Fixa" class="nav-link text-white"></a></li>
-          <li class="nav-item"><a href="categoria.html?cat=Açoes" class="nav-link text-white"></a></li>
-          <li class="nav-item"><a href="categoria.html?cat=Fundos-Imobiliarios" class="nav-link text-white"></a></li>
-          <li class="nav-item"><a href="categoria.html?cat=Criptomoedas" class="nav-link text-white"></a></li>
+          <li class="nav-item"><a href="categoria.html?cat=noticias" class="nav-link text-white">Notícias</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=renda-fixa" class="nav-link text-white">Renda Fixa</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=acoes" class="nav-link text-white">Ações</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=fundos-imobiliarios" class="nav-link text-white">Fundos Imobiliários</a></li>
+          <li class="nav-item"><a href="categoria.html?cat=criptomoedas" class="nav-link text-white">Criptomoedas</a></li>
         </ul>
         <form id="search-form" class="d-flex" role="search">
           <input id="search-input" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
@@ -71,23 +71,29 @@
   </body>
   </html>
   <script>
-    function formatarCategoria(cat) {
-      return cat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  function formatarCategoria(cat) {
+    return cat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  }
+
+  async function carregarPostsCategoria() {
+    const params = new URLSearchParams(window.location.search);
+    const catURL = params.get('cat')?.toLowerCase() || '';
+    const container = document.getElementById('posts-categoria');
+    const titulo = document.getElementById('titulo-categoria');
+    const breadcrumb = document.getElementById('breadcrumb-categoria');
+    const listaCategorias = document.getElementById('lista-categorias');
+    const footerCategorias = document.getElementById('footer-categorias');
+
+    if (!titulo || !breadcrumb || !container || !listaCategorias || !footerCategorias) {
+      console.error('Elementos da página não encontrados.');
+      return;
     }
 
-    async function carregarPostsCategoria() {
-      const params = new URLSearchParams(window.location.search);
-      const catURL = params.get('cat')?.toLowerCase() || '';
-      const container = document.getElementById('posts-categoria');
-      const titulo = document.getElementById('titulo-categoria');
-      const breadcrumb = document.getElementById('breadcrumb-categoria');
-      const listaCategorias = document.getElementById('lista-categorias');
-      const footerCategorias = document.getElementById('footer-categorias');
+    const nomeCategoria = formatarCategoria(catURL);
+    titulo.textContent = nomeCategoria;
+    breadcrumb.textContent = nomeCategoria;
 
-      const nomeCategoria = formatarCategoria(catURL);
-      titulo.textContent = nomeCategoria;
-      breadcrumb.textContent = nomeCategoria;
-
+    try {
       const res = await fetch('posts/posts.json');
       const arquivos = await res.json();
       const categoriasSet = new Set();
@@ -95,13 +101,13 @@
       for (const arquivo of arquivos) {
         const resp = await fetch(`posts/${arquivo}`);
         const texto = await resp.text();
-        const match = texto.match(/titulo: (.+)\n.*data: (.+)\n.*imagem: (.+)\n.*categoria: (.+)/);
+        const match = texto.match(/titulo:\s*(.+)\ndata:\s*(.+)\nimagem:\s*(.+)\ncategoria:\s*(.+)/i);
         if (match) {
           const [, tituloPost, data, imagem, categoria] = match;
           const catSlug = categoria.toLowerCase().replace(/ /g, '-');
           categoriasSet.add(categoria);
 
-          if (categoria.toLowerCase() === catURL) {
+          if (catSlug === catURL) {
             const card = document.createElement('div');
             card.className = 'col-md-6';
             card.innerHTML = `
@@ -126,13 +132,19 @@
       const categorias = Array.from(categoriasSet).sort();
       categorias.forEach(cat => {
         const slug = cat.toLowerCase().replace(/ /g, '-');
+        const linkHTML = `<a href="categoria.html?cat=${slug}" class="text-decoration-none">${cat}</a>`;
+
         listaCategorias.innerHTML += `<li><a href="categoria.html?cat=${slug}" class="text-decoration-none d-block py-1">${cat}</a></li>`;
-        footerCategorias.innerHTML += `<li class="list-inline-item"><a href="categoria.html?cat=${slug}" class="text-decoration-none">${cat}</a></li>`;
+        footerCategorias.innerHTML += `<li class="list-inline-item">${linkHTML}</li>`;
       });
+
+    } catch (erro) {
+      console.error('Erro ao carregar posts:', erro);
     }
-    document.addEventListener('DOMContentLoaded', () => {
-    carregarPostsCategoria();
-  });
-  </script>
+  }
+
+  carregarPostsCategoria();
+</script>
+
 </body>
 </html>
